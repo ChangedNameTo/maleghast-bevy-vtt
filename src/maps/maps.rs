@@ -1,0 +1,75 @@
+use crate::game::{GameMap, TileType};
+
+pub fn get_map_1() -> GameMap {
+    GameMap::new(
+        "I: Pools of Obliteration".to_string(),
+        vec![
+            vec![
+                TileType::SpecialZone,
+                TileType::SpecialZone,
+                TileType::Normal,
+                TileType::Normal,
+                TileType::SpecialZone,
+                TileType::SpecialZone,
+            ],
+            vec![
+                TileType::SpecialZone,
+                TileType::SpecialZone,
+                TileType::Stair,
+                TileType::Stair,
+                TileType::SpecialZone,
+                TileType::SpecialZone,
+            ],
+            vec![
+                TileType::Normal,
+                TileType::Wall,
+                TileType::Elevation,
+                TileType::Elevation,
+                TileType::Wall,
+                TileType::Normal,
+            ],
+            vec![
+                TileType::Stair,
+                TileType::Elevation,
+                TileType::Hazard,
+                TileType::Hazard,
+                TileType::Elevation,
+                TileType::Stair,
+            ],
+            vec![
+                TileType::Stair,
+                TileType::Elevation,
+                TileType::Hazard,
+                TileType::Hazard,
+                TileType::Elevation,
+                TileType::Stair,
+            ],
+            vec![
+                TileType::Normal,
+                TileType::Wall,
+                TileType::Elevation,
+                TileType::Elevation,
+                TileType::Wall,
+                TileType::Normal,
+            ],
+            vec![
+                TileType::SpecialZone,
+                TileType::SpecialZone,
+                TileType::Stair,
+                TileType::Stair,
+                TileType::SpecialZone,
+                TileType::SpecialZone,
+            ],
+            vec![
+                TileType::SpecialZone,
+                TileType::SpecialZone,
+                TileType::Normal,
+                TileType::Normal,
+                TileType::SpecialZone,
+                TileType::SpecialZone,
+            ],
+        ],
+        "These pools boil over with dark magic".to_string(),
+        "".to_string(),
+    )
+}
